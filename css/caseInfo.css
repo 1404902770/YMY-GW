@@ -1,0 +1,37 @@
+/* 选中导航 */
+#menu>ul>li:nth-child(4) a {
+    color: #fff;
+}
+/* 中间内容 */
+#caseInfo {
+    margin-top: 0;
+    padding-bottom: .6rem;
+}
+#caseInfo h3 {
+    position: relative;
+    line-height: 60px;
+    margin-bottom: .4rem;
+}
+#caseInfo h3:after {
+	content: '';
+    position: absolute;
+    left: 46.8%;
+    top: auto;
+    bottom: 0;
+    right: auto;
+    height: .03rem;
+    width: 1rem;
+    background-color: #049ee8;
+}
+#caseInfo .shell h4 {
+    text-align: center;
+    margin-bottom:.4rem; 
+}
+#caseInfo .shell img {
+    display: block;
+    margin: auto;
+    margin-bottom:.4rem; 
+}
+#caseInfo .shell p {
+    text-indent: 2em; 
+}

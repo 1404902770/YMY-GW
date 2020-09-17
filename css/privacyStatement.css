@@ -1,0 +1,13 @@
+.privacyStatement {
+    width: 60%;
+    margin: auto;
+}
+.privacyStatement h3 {
+    text-align: center;
+}
+@media screen and (max-width: 768px) { 
+    .privacyStatement {
+        width: 95%;
+        margin: auto;
+    }
+}

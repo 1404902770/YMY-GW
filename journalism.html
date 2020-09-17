@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>新闻动态</title>
+        <!-- icon -->
+        <link rel="icon" href="images/logo.ico" type="image/x-icon" />
+        <!-- 适配手机端 -->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+        <!-- seo -->
+        <meta name="keywords" content="裕茂优,智慧用电,智能用电,大数据分析,用电安全">
+        <meta name="description" content="裕茂优科技秦皇岛有限公司是一家以物联网技术为核心的高新技术企业。专注于智慧用电产品的研发与制造，以及云控智能用电服务管理的大数据云平台建设。">
+        <!-- JQ -->
+        <script src="js/jQuery-3.4.1.js"></script>
+        <!-- 动画 -->
+        <link rel="stylesheet" href="css/animate.min.css" />
+        <script src="js/wow.min.js"></script>
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <!-- vue -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+        <!-- element -->
+        <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+        <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+        <!-- swiper -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+        <!-- 公共引入 -->
+        <link rel="stylesheet" type="text/css" href="css/public.css" />
+        <script src="js/public.js"></script>
+        <!-- 该页面所需 -->
+        <link rel="stylesheet" type="text/css" href="css/journalism.css" />
+        <script src="js/journalism.js"></script>
+
+    </head>
+
+    <body>
+        <!-- 导航 -->
+        <nav class="nav navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <!--在移动端的时候导航条折叠起来，三横的样式出现，点击该样式可以显示或隐藏导航条上的内容-->
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand">
+                        <img src="images/logo.png" class="logo" />
+                    </a>
+                </div>
+                <div id="menu" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="index.html">首页</a>
+                        </li>
+                        <li>
+                            <a href="productIntroduction.html">产品介绍</a>
+                        </li>
+                        <!-- <li>
+                        <a href="programme.html">方案中心</a>
+                    </li> -->
+                        <li>
+                            <a href="case.html">案例展示</a>
+                        </li>
+                        <li>
+                            <a href="aboutUs.html">关于我们</a>
+                        </li>
+                        <li>
+                            <a href="journalism.html">新闻动态</a>
+                        </li>
+                        <li>
+                            <a href="contactUs.html">联系我们</a>
+                        </li>
+                        <li>
+                            <a href="lookForPeople.html">招贤纳士</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- 中间内容 -->
+        <div id="journalism" class="shell" v-cloak>
+            <el-breadcrumb separator-class="el-icon-arrow-right">
+                <el-breadcrumb-item>首页</el-breadcrumb-item>
+                <el-breadcrumb-item>新闻动态</el-breadcrumb-item>
+            </el-breadcrumb>
+            <el-tabs :tab-position="tabPosition" @tab-click="handleClick">
+                <el-tab-pane v-for='item in lists' :label="item.mame">
+                    <div class="z1" v-for='item1 in item.content'>
+                        <div class="z1_left">
+                            <p class="p1">{{ getString1(item1.time,2) }}</p>
+                            <p class="p2">{{ getString2(item1.time,7) }}</p>
+                        </div>
+                        <div class="z1_right">
+                            <p class="p1" @click="jemlPath(item1.id,item.mame)">{{ item1.title }}</p>
+                            <p class="p2">{{ item1.text }}</p>
+                        </div>
+                    </div>
+                </el-tab-pane>
+            </el-tabs>
+        </div>
+        <!-- 底部 -->
+        <footer id="footer">
+            <div class="row d1">
+                <div class="col-xs-6 col-md-4 d1_1">
+                    <h4>裕茂优科技秦皇岛有限公司</h4>
+                    <p>技术总监</p>
+                    <p>姓名：赵先生</p>
+                    <p>电话：0335-3023888</p>
+                    <p>QQ：敬请期待</p>
+                    <p>邮箱：ymyqhd@163.com</p>
+                    <p>地址：河北省秦皇岛市开发区华山中路8号银通大厦216</p>
+                </div>
+                <div class="col-xs-6 col-md-4 d1_2">
+                    <h4 style="text-align: center">公司资质</h4>
+                    <img :src="item" alt="" v-for='item in zzImg'>
+                </div>
+                <div class="col-xs-5 col-md-2 d1_3">
+                    <h4 style="text-align: center">关注公众号</h4>
+                    <img src="images/weixin.jpg" alt="">
+                </div>
+                <div class="col-xs-5 col-md-2 d1_3">
+                    <h4 style="text-align: center">下载App</h4>
+                    <img src="images/Appewm.png" alt="">
+                </div>
+            </div>
+            <div class="d2">
+                <div class="d2_1">
+                    <a href="contactUs.html" target="_blank">联系我们</a>
+                    <a href="lookForPeople.html" target="_blank">招贤纳士</a>
+                    <a href="privacyStatement.html" target="_blank">隐私政策</a>
+                </div>
+                <div class="d2_2">
+                    Copyright © 2019-{{ year }} 裕茂优科技秦皇岛有限公司 All rights reserved. 冀ICP备19037449号-1
+                </div>
+                <div class="d2_3">
+                    <a href="http://beian.miit.gov.cn" target="_blank">
+                        <img src="images/jinghui.png" />
+                        冀ICP备19037449号-1
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>

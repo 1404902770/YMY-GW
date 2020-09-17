@@ -1,0 +1,139 @@
+@media screen and (max-width: 768px) {
+	#aboutUs .weInfo .el-col .p1 {
+        font-size: 16px!important;
+    }
+    #aboutUs .weInfo .el-col .p2 {
+        font-size: 12px!important;
+    }
+    #aboutUs .advantage h3:after {
+        left: 46%!important;
+    }
+    #aboutUs .el-tabs {
+        width: 90%!important;
+    }
+    #aboutUs .advantage .advantageList .advantageLists {
+        width: 50%!important;
+        margin-top: -1px!important;
+    }
+    #aboutUs .advantage .advantageList {
+        width: 95%!important;
+    }
+    #aboutUs .weInfo {
+        width: 92%!important;
+        left: 4%!important;
+    }
+}
+/* 选中导航 */
+#menu>ul>li:nth-child(4) a {
+    color: #fff;
+}
+.banners {
+    height: 5rem;
+}
+/* 中间内容 */
+#aboutUs {
+    margin-top: 0;
+    position: relative;
+    width: 80%;
+}
+#aboutUs .weInfo {
+    width: 80%;
+    margin: auto;
+    min-height: 1rem;
+    background: #fff;
+    position: absolute;
+    top: -.6rem;
+    box-shadow: 0 1px 20px -1px rgba(86,86,86,0.3);
+    padding-top: .2rem;
+    left: 10%;
+}
+#aboutUs .weInfo .el-col p {
+    margin-bottom: 0;
+    line-height: .6rem;
+}
+#aboutUs .weInfo .el-col .p1 {
+    text-align: center;
+    font-size: .28rem;
+    color: #049ee8; 
+    font-weight: 600; 
+}
+#aboutUs .weInfo .el-col .p2 {
+    text-align: center;
+}
+#aboutUs .el-tabs {
+    padding-top: 1rem;
+    width: 80%;
+    margin: auto;
+}
+#aboutUs .el-tabs .el-tab-pane img {
+    width: 100%;
+    height: 4.1rem;
+    margin-bottom: .4rem;
+}
+#aboutUs .el-tabs .el-tab-pane p {
+    text-indent: 2em; 
+    line-height: 35px;
+}
+#aboutUs .advantage {
+    width: 100%;
+    overflow: hidden;
+    padding: .4rem 0 .6rem 0;
+}
+#aboutUs .advantage h3 {
+    position: relative;
+    line-height: 60px;
+    margin-bottom: .4rem;
+}
+#aboutUs .advantage h3:after {
+	content: '';
+    position: absolute;
+    left: 47.5%;
+    top: auto;
+    bottom: 0;
+    right: auto;
+    height: .03rem;
+    width: 1rem;
+    background-color: #049ee8;
+}
+#aboutUs .advantage .el-row {
+    width: 80%;
+    margin: auto;
+}
+#aboutUs .advantage .advantageList {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#aboutUs .advantage .advantageList .advantageLists {
+    padding: .2rem .4rem;
+    background: #fff;
+    width:20%;
+    border: 1px solid #e5e5e5;
+    margin-left: -1px; 
+    cursor: pointer;
+    transition: .3s;
+}
+#aboutUs .advantage .advantageList .advantageLists:hover {
+    transform: scale(1.1)
+}
+#aboutUs .advantage .advantageList .advantageLists:hover i {
+    color: #049ee8;
+}
+#aboutUs .advantage .advantageList .advantageLists:hover h4 {
+    color: #049ee8;
+}
+#aboutUs .advantage .advantageList .advantageLists h4 {
+    text-align: center; 
+    margin: .25rem 0;
+}
+#aboutUs .advantage .advantageList .advantageLists p {
+    color: #666;
+    font-size: 12px; 
+}
+#aboutUs .advantage .advantageList .advantageLists i {
+    text-align: center;
+    display: block;
+    font-size: 60px;
+    margin: .4rem 0;
+}

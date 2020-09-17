@@ -1,0 +1,42 @@
+@media screen and (max-width: 768px) {
+    #lookForPeople .el-tabs .d3 p {
+        font-size: 12px;
+    }
+    #lookForPeople .el-tabs .d1 .p2 {
+        font-size: 12px;
+    }
+    #lookForPeople .el-tabs .d2 p {
+        font-size: 12px;
+    }
+    .el-tabs--left .el-tabs__item.is-left {
+        padding-left: 0;
+        padding-right: 10px;
+        font-size: 12px;
+    }
+    #lookForPeople .el-tabs .d1 .p2 span {
+        margin-right: .2rem!important; 
+    }
+    #lookForPeople .el-tabs .d3 p span {
+        margin-right: .2rem!important; 
+    }
+}
+/* 选中导航 */
+#menu>ul>li:last-child a {
+    color: #fff;
+}
+#lookForPeople .el-tabs {
+    overflow: hidden;
+    padding: 0 .2rem;
+    margin-bottom: .6rem;
+}
+#lookForPeople .el-tabs .d1 .p2 span {
+    color: #049ee8;
+    margin-right: .4rem; 
+}
+#lookForPeople .el-tabs .d2 {
+    margin: .6rem 0;
+}
+#lookForPeople .el-tabs .d3 p span {
+    color: #049ee8;
+    margin-right: .4rem; 
+}

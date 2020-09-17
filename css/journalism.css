@@ -1,0 +1,75 @@
+@media screen and (max-width: 768px) {
+    .el-tabs__content {
+        padding-left: 0!important;
+    }
+    #journalism .el-tabs .z1 .z1_left {
+        width: 70px!important;
+        height: 70px!important;
+    }
+    #journalism .el-tabs .z1 .z1_left .p1 {
+        margin-top: 10px!important;
+    }
+    #journalism .el-tabs .z1 .z1_right .p1 {
+        font-size: 14px!important;
+    }
+    #journalism .el-tabs .z1 .z1_right .p2 {
+        font-size: 12px!important;
+    }
+}
+/* 选中导航 */
+#menu>ul>li:nth-child(5) a {
+    color: #fff;
+}
+.el-tabs__content {
+    padding-left: .4rem;
+}
+#journalism .el-tabs {
+    margin-top: .2rem;
+}
+#journalism .el-tabs .z1 {
+    overflow: hidden;
+    border-bottom: 1px solid #e4e7ed; 
+    overflow: hidden;
+    margin-bottom: .4rem;
+}
+#journalism .el-tabs .z1 .z1_left {
+    width: 80px;
+    height: 80px;
+    float: left;
+    background: #409EFF;
+}
+#journalism .el-tabs .z1 .z1_left .p1 {
+    color: #fff;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-size: 30px;
+}
+#journalism .el-tabs .z1 .z1_left .p2 {
+    color: #fff;
+    line-height: .3rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+#journalism .el-tabs .z1 .z1_right {
+    padding-left: 90px;
+}
+#journalism .el-tabs .z1 .z1_right .p1 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+    line-height: 35px; 
+}
+#journalism .el-tabs .z1 .z1_right .p1:hover {
+    color: #409EFF;
+    cursor: pointer;
+}
+#journalism .el-tabs .z1 .z1_right .p2 {
+    margin-bottom: 0;
+    color: #666;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}

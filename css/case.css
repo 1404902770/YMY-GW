@@ -1,0 +1,48 @@
+@media screen and (max-width: 768px) {
+    #case .el-row .el-col p {
+        font-size: .12rem;
+    }
+}
+/* 选中导航 */
+#menu>ul>li:nth-child(3) a {
+    color: #fff;
+}
+/* 中间内容 */
+#case {
+    margin-top: 0;
+    padding-bottom: .6rem;
+}
+#case h3 {
+    position: relative;
+    line-height: 60px;
+    margin-bottom: .4rem;
+}
+#case h3:after {
+	content: '';
+    position: absolute;
+    left: 46.8%;
+    top: auto;
+    bottom: 0;
+    right: auto;
+    height: .03rem;
+    width: 1rem;
+    background-color: #049ee8;
+}
+#case .el-row .el-col {
+    padding: .1rem;
+}
+#case .el-row .el-col img {
+    width: 100%;
+    height: 3.5rem;
+}
+#case .el-row .el-col p {
+    text-align: center;
+    line-height: .6rem;
+    color: #666;
+}
+#case .el-row .el-col>div:hover {
+    box-shadow: 0px 0px 15px #d0d0d0;
+    transition: 0.5s;
+    border-radius: .06rem;
+    cursor: pointer; 
+}

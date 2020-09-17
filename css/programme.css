@@ -1,0 +1,40 @@
+/* 选中导航 */
+#menu>ul>li:nth-child(3) a {
+    color: #fff;
+}
+/* 中间内容 */
+#programme {
+    margin-top: 0;
+}
+#programme .el-tabs .el-row {
+    padding: .1rem;
+}
+#programme .el-tabs .el-row .el-col  {
+    margin-bottom: .4rem;
+}
+#programme .el-tabs .el-row .el-col>div {
+    cursor: pointer;
+    padding: .1rem;
+    border-radius: .06rem; 
+}
+#programme .el-tabs .el-row .el-col>div:hover {
+    box-shadow: 0px 0px 15px #d0d0d0;
+    transition: 0.5s;
+    border-radius: .06rem; 
+}
+#programme .el-tabs .el-row .el-col>div img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+#programme .el-tabs .el-row .el-col>div p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #999;
+    font-size: 12px;
+    text-indent: 2em; 
+}
+.el-tabs__header {
+    padding: 0 .2rem!important;
+}

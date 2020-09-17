@@ -1,0 +1,79 @@
+@media screen and (max-width: 768px) {
+    #contactUs h3:after {
+        left: 45%!important;
+    }
+    #contactUs .shell1 .el-col i {
+        float: left;
+        font-size: 28px!important;
+    }
+    #contactUs .shell1 .el-col p {
+        text-align: left!important;
+        padding-left: 1.5rem!important;
+        color: #666;
+    }
+    .info1 {
+        padding-right: 1rem;
+    }
+    .info2 {
+        padding: 0 .9rem;
+    }
+}
+/* 选中导航 */
+#menu>ul>li:nth-child(6) a {
+    color: #fff;
+}
+/* 中间内容 */
+#contactUs {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    min-height: 8rem;
+    overflow: hidden;
+}
+#contactUs h3 {
+    position: relative;
+    line-height: 60px;
+    margin-bottom: .4rem;
+    margin-top: .6rem;
+}
+#contactUs h3:after {
+	content: '';
+    position: absolute;
+    left: 46.9%;
+    top: auto;
+    bottom: 0;
+    right: auto;
+    height: .03rem;
+    width: 1rem;
+    background-color: #049ee8;
+}
+#contactUs .shell1 .el-col {
+    margin-top: .4rem;
+}
+#contactUs .shell1 .el-col i {
+    font-size: 36px; 
+    display: block;
+    text-align: center;
+}
+#contactUs .shell1 .el-col p {
+    text-align: center;
+    margin-top: .4rem; 
+    padding: 0 0.4rem;
+}
+.el-form-item__label {
+    font-weight: 400;
+}
+.el-textarea__inner {
+    min-height: 1.5rem!important;
+}
+.el-input__inner {
+    box-shadow: 0px 0px 0px 0px;
+    border: none;
+    border-bottom: #DCDFE6 1px solid;
+    border-radius:0; 
+}
+#contactUs .shell2 {
+    height: 7rem;
+    margin: .6rem 0;
+    border:#ccc solid 1px;
+}
